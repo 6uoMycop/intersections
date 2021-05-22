@@ -13,9 +13,9 @@ every line represents vector ((x1_i,y1_i),(x2_i,y2_i))
 
 coordinates are positive integer values
 
-second point of  i-th   vector MUST be the same as first point of  i+1-th  vector
+second point of  i-th   vector MUST be the same as first point of  i+1-th      vector
 
-second point of  first  vector MUST be the same as first point of  last    vector
+second point of  first  vector MUST be the same as first point of  the last    vector
 
     <x1_1>,<y1_1>,<x2_1>,<y2_1>
     <x2_1>,<y2_1>,<x2_2>,<y2_2>
