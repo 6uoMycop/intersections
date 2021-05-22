@@ -1,5 +1,8 @@
 # intersections
 
+Program takes set of segments which represent a circuit.
+Prints out number of intersections between these segments.
+
 ## USAGE:
 
 <executable_name>.exe <path/to/file/with/segments/data>.csv
