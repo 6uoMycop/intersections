@@ -51,7 +51,7 @@ bool init(const char* file_path, std::vector<segment>* segments)
 
     file_in.close();
 
-    if (tmp_points.size() < 2 || 
+    if (tmp_points.size() < 3 || 
         tmp_points.front().x != tmp_points.back().x ||
         tmp_points.front().y != tmp_points.back().y)
     {
@@ -62,6 +62,11 @@ bool init(const char* file_path, std::vector<segment>* segments)
         it != tmp_points.end();
         ++it, ++it_prev)
     {
+        if (it_prev->x == it->x && it_prev->y == it->y)
+        {
+            return false;
+        }
+
         segment tmp_segment{
             {
                 it_prev->x,
@@ -175,6 +180,7 @@ int32_t number_of_intersections(const std::vector<segment>& segments)
 * (every line represents a point (x_i,y_i))
 * (coordinates are positive integer values)
 * (first point MUST be the same as last point)
+* (minimum 3 points allowed)
 * <x_1>,<y_1>
 * <x_2>,<y_2>
 * ...
