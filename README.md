@@ -30,7 +30,24 @@ second point of  first  vector MUST be the same as first point of  the last    v
 
 ## Example test cases:
 
-### File:
+
+### File 1:
+
+    1,1,1,11
+    1,11,8,1
+    8,1,8,11
+    8,11,1,1
+
+### Output:
+
+    Number of intersections: 1
+
+### Graph plot:
+
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph1.png)
+
+
+### File 2:
 
     1,1,1,11
     1,11,11,11
@@ -38,18 +55,29 @@ second point of  first  vector MUST be the same as first point of  the last    v
     11,1,3,20
     3,20,1,1
 
-intersections: 2
+### Output:
+
+    Number of intersections: 2
+
+### Graph plot:
 
 ![alt text](https://github.com/6uoMycop/intersections/raw/master/graph2.png)
 
 
-### File:
+### File 3:
 
     1,1,1,11
-    1,11,8,1
-    8,1,8,11
-    8,11,1,1
+    1,11,11,1
+    11,1,11,4
+    11,4,4,1
+    4,1,9,7
+    9,7,1,1
 
-intersections: 1
+### Output:
 
-![alt text](https://github.com/6uoMycop/intersections/raw/master/graph1.png)
+    Number of intersections: 3
+
+### Graph plot:
+
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph3.png)
+
