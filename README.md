@@ -1,6 +1,6 @@
 # intersections
 
-Program takes set of segments which represent a circuit.
+Program takes set of points which represent a circuit.
 Prints out number of intersections between these segments.
 
 ## USAGE:
