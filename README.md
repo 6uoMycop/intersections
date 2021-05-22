@@ -15,6 +15,8 @@ coordinates are positive integer values
 
 first point MUST be the same as last point
 
+minimum 3 points allowed, "void" sections (x,y),(x,y) where both points are the same don't allowed
+
 ### EXAMPLE FILE:
 
     3,9
