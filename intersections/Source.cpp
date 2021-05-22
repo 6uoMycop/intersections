@@ -51,10 +51,16 @@ bool init(const char* file_path, std::vector<segment>* segments)
 
     file_in.close();
 
-    if (tmp_points.size() < 3 || 
-        tmp_points.front().x != tmp_points.back().x ||
+    if (tmp_points.size() < 3)
+    {
+        std::cout << "Input file contains only " << tmp_points.size() << " points" << std::endl;
+        return false;
+    }
+         
+    if (tmp_points.front().x != tmp_points.back().x ||
         tmp_points.front().y != tmp_points.back().y)
     {
+        std::cout << "Input line is not a circuit" << std::endl;
         return false;
     }
 
@@ -64,6 +70,9 @@ bool init(const char* file_path, std::vector<segment>* segments)
     {
         if (it_prev->x == it->x && it_prev->y == it->y)
         {
+            std::cout << "Input file contains \"void\" line (" << 
+                it_prev->x << ","<< it_prev->y << "), (" << it->x << ","<< it->y << ")" 
+                << std::endl;
             return false;
         }
 
