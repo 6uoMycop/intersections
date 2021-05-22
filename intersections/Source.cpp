@@ -174,7 +174,7 @@ int32_t number_of_intersections(const std::vector<segment>& segments)
 * FILE FORMAT:
 * (every line represents a point (x_i,y_i))
 * (coordinates are positive integer values)
-* (second point MUST be the same as last point)
+* (first point MUST be the same as last point)
 * <x_1>,<y_1>
 * <x_2>,<y_2>
 * ...
