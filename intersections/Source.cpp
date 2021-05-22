@@ -205,7 +205,10 @@ int main(int argc, char* argv[])
         }
     }
 
-    std::cout << "Number of intersections: " << number_of_intersections(segments) << std::endl;
+    std::cout << "Number of intersections: " << number_of_intersections(segments) << std::endl << std::endl;
+    std::cout << "Press enter ";
+
+    getchar();
 
     return 0;
 }
