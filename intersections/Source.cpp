@@ -186,7 +186,6 @@ int32_t number_of_intersections(const std::vector<segment> &segments)
 int main(int argc, char* argv[])
 {
     std::vector<segment> segments;
-    uint32_t number;
     
     if (argc != 2)
     {
