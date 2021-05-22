@@ -191,7 +191,7 @@ int main(int argc, char* argv[])
 
     if (argc != 2)
     {
-        if (!init("C:\\data.csv", &segments))
+        if (!init("data.csv", &segments))
         {
             std::cout << "Initialization uncuccessful. Check input file. Terminating." << std::endl;
             return -1;
@@ -207,9 +207,6 @@ int main(int argc, char* argv[])
     }
 
     std::cout << "Number of intersections: " << number_of_intersections(segments) << std::endl << std::endl;
-    std::cout << "Press enter ";
-
-    getchar();
 
     return 0;
 }

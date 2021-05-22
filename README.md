@@ -10,9 +10,13 @@ Prints out number of intersections between these segments.
 ## FILE FORMAT:
 
 every line represents vector ((x1_i,y1_i),(x2_i,y2_i))
+
 coordinates are positive integer values
-second point of  i-th   vector MUST be the same as first point of  i+1-th  vector
-second point of  first  vector MUST be the same as first point of  last    vector
+
+second point of  i-th   vector MUST be the same as first point of  i+1-th      vector
+
+second point of  first  vector MUST be the same as first point of  the last    vector
+
     <x1_1>,<y1_1>,<x2_1>,<y2_1>
     <x2_1>,<y2_1>,<x2_2>,<y2_2>
     ...
@@ -26,7 +30,39 @@ second point of  first  vector MUST be the same as first point of  last    vecto
 
 ## Example test cases:
 
-### File:
+### File 0:
+
+    1,1,1,11
+    1,11,11,1
+    11,1,5,5
+    5,5,1,1
+
+### Output:
+
+    Number of intersections: 0
+
+### Graph plot:
+
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph0.png)
+
+
+### File 1:
+
+    1,1,1,11
+    1,11,8,1
+    8,1,8,11
+    8,11,1,1
+
+### Output:
+
+    Number of intersections: 1
+
+### Graph plot:
+
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph1.png)
+
+
+### File 2:
 
     1,1,1,11
     1,11,11,11
@@ -34,18 +70,29 @@ second point of  first  vector MUST be the same as first point of  last    vecto
     11,1,3,20
     3,20,1,1
 
-intersections: 2
+### Output:
 
-![alt text](https://github.com/6uoMycop/intersections/raw/master/graph1.png)
+    Number of intersections: 2
 
-
-### File:
-
-    1,1,1,11
-    1,11,8,1
-    8,1,8,11
-    8,11,1,1
-
-intersections: 1
+### Graph plot:
 
 ![alt text](https://github.com/6uoMycop/intersections/raw/master/graph2.png)
+
+
+### File 3:
+
+    1,1,1,11
+    1,11,11,1
+    11,1,11,4
+    11,4,4,1
+    4,1,9,7
+    9,7,1,1
+
+### Output:
+
+    Number of intersections: 3
+
+### Graph plot:
+
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph3.png)
+
