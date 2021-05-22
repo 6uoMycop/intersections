@@ -40,7 +40,7 @@ second point of  first  vector MUST be the same as first point of  last    vecto
 
 intersections: 2
 
-![alt text](https://github.com/6uoMycop/intersections/raw/master/graph1.png)
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph2.png)
 
 
 ### File:
@@ -52,4 +52,4 @@ intersections: 2
 
 intersections: 1
 
-![alt text](https://github.com/6uoMycop/intersections/raw/master/graph2.png)
+![alt text](https://github.com/6uoMycop/intersections/raw/master/graph1.png)
