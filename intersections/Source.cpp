@@ -190,14 +190,19 @@ int main(int argc, char* argv[])
     
     if (argc != 2)
     {
-        std::cout << "Pass data file path as an option on next run. Terminating." << std::endl;
-        return -2;
+        if (!init("data.csv", &segments))
+        {
+            std::cout << "Initialization uncuccessful. Check input file. Terminating." << std::endl;
+            return -1;
+        }
     }
-
-    if (!init(argv[1], &segments))
+    else
     {
-        std::cout << "Initialization uncuccessful. Check input file. Terminating." << std::endl;
-        return -1;
+        if (!init(argv[1], &segments))
+        {
+            std::cout << "Initialization uncuccessful. Check input file. Terminating." << std::endl;
+            return -1;
+        }
     }
 
     std::cout << "Number of intersections: " << number_of_intersections(segments) << std::endl;
