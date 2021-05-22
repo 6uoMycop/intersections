@@ -189,7 +189,7 @@ int main(int argc, char* argv[])
     
     if (argc != 2)
     {
-        if (!init("data.csv", &segments))
+        if (!init("C:\\data.csv", &segments))
         {
             std::cout << "Initialization uncuccessful. Check input file. Terminating." << std::endl;
             return -1;
