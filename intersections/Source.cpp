@@ -16,7 +16,6 @@ typedef struct {
     point point1, point2;
 } segment;
 
-
 /*
 * Initialization function: here we fill the segments vector from a file
 */
