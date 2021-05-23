@@ -3,6 +3,8 @@
 Program takes set of points which represent a circuit.
 Prints out number of intersections between these segments.
 
+Algorithm from book "Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein, 2009.
+
 ## USAGE:
 
 <executable_name>.exe <path/to/file/with/segments/data>.csv
